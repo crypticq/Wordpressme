@@ -114,7 +114,7 @@ def main(region , file):
 
                 
 def get_args():
-    parser = argparse.ArgumentParser(description='Dns enumeration')
+    parser = argparse.ArgumentParser(description='Wordpress grabber . ')
     parser.add_argument('-r', '--region', dest="region", required=True, action='store', help='Target Region for example .ir ')
     parser.add_argument('-f', '--file', dest="file", required=True, action='store', help='fie name to save output.')
 
