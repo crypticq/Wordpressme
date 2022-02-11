@@ -101,19 +101,16 @@ def main(region , file):
                     for http in sit:
                         f = http.split("/")[2]
                         if region in f:
-                            
-                            no = []
 
-                            if f not in no:
-                                with open(file , 'a') as infile:
-                                    infile.write("\n")
-                                    infile.write(f)
-                                wordpressme(f)
+                            with open(file , 'a') as infile:
+                                infile.write("\n")
+                                infile.write(f)
+                            wordpressme(f)
             
             except:
 
                 pass
-        print(style.RED + f'Websites Saved at {file}') 
+        
 
                 
 def get_args():
@@ -128,6 +125,6 @@ args = get_args()
 region = args.region
 fileo = args.file
 
-
 if __name__ == '__main__':
     main(region , fileo)
+    print(style.RED + f'Websites Saved at {fileo}') 
